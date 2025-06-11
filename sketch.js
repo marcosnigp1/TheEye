@@ -45,7 +45,7 @@ function setup() {
 
 function draw() {
   background(0);
-  cursor(customCursor); // 0,0 = hotspot (top-left of the image)
+  cursor("media/cursorimg.png"); // 0,0 = hotspot (top-left of the image)
 
 
   //Abdullah
