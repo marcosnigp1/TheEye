@@ -2,6 +2,7 @@ let w = window.innerWidth;
 let h = window.innerHeight;  
 
 let eye;
+let customCursor;
 
 class Eye{
   constructor(x,y){
@@ -29,16 +30,23 @@ class Eye{
   }
 }
 
+function preload() {
+  // Load your custom PNG image
+  customCursor = loadImage('media/cursorimg.png'); // Replace with your image path
+}
+
 function setup() {
   canvas = createCanvas(w, h);
   eye = new Eye(0,0);
-
+  
   //Change cursor image.
 
 }
 
 function draw() {
   background(0);
+  cursor(customCursor); // 0,0 = hotspot (top-left of the image)
+
 
   //Abdullah
 /*   push()
